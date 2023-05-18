@@ -1,0 +1,33 @@
+@file:Suppress("DEPRECATION")
+
+package com.example.truelinksocial
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.view.View
+import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.Fragment
+import com.example.truelinksocial.databinding.ActivityMainBinding
+import com.example.truelinksocial.ui.onboarding.Onboarding1Fragment
+import com.example.truelinksocial.ui.onboarding.Onboarding2Fragment
+import com.example.truelinksocial.ui.onboarding.Onboarding3Fragment
+
+class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+
+
+        //handling status bar
+        statusBarContentVisibility()
+    }
+
+    private fun statusBarContentVisibility() {
+        //To make status bar content dark color(black)
+        window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
+    }
+}
+
+

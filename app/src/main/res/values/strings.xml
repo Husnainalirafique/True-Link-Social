@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">True Link Social</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="onboarding1_heading">Discover meaningful connections</string>
+    <string name="onboarding2_heading">Say goodbye to \nswiping </string>
+    <string name="onboarding3_heading">Find your best friend \nwith us</string>
+    <string name="onboarding_sub_heading">Lets find your life partner to\n enjoy life to be better and\n prosperous</string>
+    <string name="get_started">Get Started</string>
+    <string name="welcome_back">Welcome back!</string>
+    <string name="username_hint">Enter Username</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_in">Sign in</string>
+    <string name="enter_password">Password</string>
+    <string name="or_sign_in_with">Or sign in with</string>
+    <string name="already_a_member">Already a member?</string>
+    <string name="register_now">Register now</string>
+    <string name="welcome">Welcome!</string>
+    <string name="email_hint">Email</string>
+    <string name="confirm_password_hint">Confirm password</string>
+    <string name="or_sign_up_with">Or Sign up with</string>
+    <string name="not_a_member">Not a member?</string>
+    <string name="sign_up">Sign Up</string>
+</resources>
