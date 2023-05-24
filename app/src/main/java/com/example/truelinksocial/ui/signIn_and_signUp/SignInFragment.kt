@@ -12,7 +12,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
 import androidx.databinding.DataBindingUtil
-import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 import com.example.truelinksocial.R
 import com.example.truelinksocial.databinding.FragmentSignInBinding
@@ -58,7 +57,7 @@ class SignInFragment :Fragment() {
                         editText.setCompoundDrawablesRelativeWithIntrinsicBounds(
                             0,
                             0,
-                            if (isPasswordVisible) R.drawable.baseline_visibility_off_24 else R.drawable.password_visibility,
+                            if (isPasswordVisible) R.drawable.password_visibility_off else R.drawable.password_visibility_on,
                             0
                         )
                         editText.setSelection(cursorPosition)

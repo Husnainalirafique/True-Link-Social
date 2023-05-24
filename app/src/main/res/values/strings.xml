@@ -21,4 +21,11 @@
     <string name="or_sign_up_with">Or Sign up with</string>
     <string name="not_a_member">Not a member?</string>
     <string name="sign_up">Sign Up</string>
+    <string name="opt_verification_sub_content">We’ll send you a one-time password to this number</string>
+    <string name="get_otp">Get OTP</string>
+    <string name="confirm">Confirm</string>
+    <string name="did_you_receive_the_otp">Did you receive the OTP?</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="enter_the_otp_sent_to">Enter the OTP sent to</string>
+    <string name="otp_verification">OTP Verification</string>
 </resources>

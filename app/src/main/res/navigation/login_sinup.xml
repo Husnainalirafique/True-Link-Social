@@ -25,5 +25,40 @@
             app:destination="@id/signInFragment"
             app:popUpTo="@id/signInFragment"
             app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_signUpFragment_to_OTPSendFragment"
+            app:destination="@id/OTPSendFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/OTPSendFragment"
+        android:name="com.example.truelinksocial.ui.signIn_and_signUp.otp.OTPSendFragment"
+        tools:layout="@layout/fragment_o_t_p_send"
+        android:label="OTPSendFragment" >
+        <action
+            android:id="@+id/action_OTPSendFragment_to_OTPVerificationFragment"
+            app:destination="@id/OTPVerificationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/OTPVerificationFragment"
+        android:name="com.example.truelinksocial.ui.signIn_and_signUp.otp.OTPVerificationFragment"
+        tools:layout="@layout/fragment_o_t_p_verification"
+        android:label="OTPVerificationFragment" >
+        <action
+            android:id="@+id/action_OTPVerificationFragment_to_signUpCompleteFragment"
+            app:destination="@id/signUpCompleteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpCompleteFragment"
+        android:name="com.example.truelinksocial.ui.after_Sign_up_onboarding.SignUpCompleteFragment"
+        tools:layout="@layout/fragment_sign_up_complete"
+        android:label="SignUpCompleteFragment" >
+        <action
+            android:id="@+id/action_signUpCompleteFragment_to_onboardingQuestionsFragment"
+            app:destination="@id/onboardingQuestionsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboardingQuestionsFragment"
+        android:name="com.example.truelinksocial.ui.after_Sign_up_onboarding.OnboardingQuestionsFragment"
+        tools:layout="@layout/fragment_onboarding_questions"
+        android:label="OnboardingQuestionsFragment" />
 </navigation>

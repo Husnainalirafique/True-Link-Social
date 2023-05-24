@@ -55,7 +55,7 @@
                 android:inputType="textPersonName"
                 android:textColor="@color/black"
                 android:textColorHint="#9A9797"
-                android:paddingEnd="5dp"
+                android:fontFamily="@font/montserrat_medium"
                 tools:ignore="RtlSymmetry,VisualLintTextFieldSize,TextContrastCheck"
                 android:autofillHints="username" />
 
@@ -66,12 +66,13 @@
                 android:layout_marginTop="20dp"
                 android:background="@drawable/edit_text_bg"
                 android:hint="@string/enter_password"
+                android:fontFamily="@font/montserrat_medium"
                 android:paddingStart="12dp"
                 android:textColor="@color/black"
                 android:textColorHint="#9A9797"
                 android:paddingEnd="12dp"
                 android:longClickable="false"
-                android:drawableEnd="@drawable/baseline_visibility_off_24"
+                android:drawableEnd="@drawable/password_visibility_on"
                 tools:ignore="Autofill,RtlSymmetry,TextContrastCheck,VisualLintTextFieldSize"
                 android:inputType="textPassword" />
             <androidx.appcompat.widget.AppCompatTextView
@@ -92,6 +93,7 @@
                 android:layout_marginTop="50dp"
                 style="@style/MyButtonStyle"
                 android:text="@string/sign_in"
+                android:fontFamily="@font/inter_bold"
                 tools:ignore="VisualLintButtonSize" />
             <LinearLayout
                 android:layout_width="match_parent"
