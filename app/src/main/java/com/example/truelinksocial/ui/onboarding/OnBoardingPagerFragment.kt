@@ -56,9 +56,7 @@ class OnBoardingPagerFragment : Fragment() {
                 binding.onBoardingPagerFragmentDotImg1.setBackgroundColor(ContextCompat.getColor(requireContext(),R.color.primary_color))
                 binding.onBoardingPagerFragmentDotImg2.setBackgroundColor(ContextCompat.getColor( requireContext(), R.color.inActive) )
                 binding.onBoardingPagerFragmentDotImg3.setBackgroundColor( ContextCompat.getColor(requireContext(), R.color.inActive ) )
-
             }
-
             1 -> {
                 binding.onBoardingPagerFragmentDotImg1.setBackgroundColor(ContextCompat.getColor(requireContext(),R.color.inActive))
                 binding.onBoardingPagerFragmentDotImg2.setBackgroundColor(ContextCompat.getColor( requireContext(), R.color.primary_color) )
