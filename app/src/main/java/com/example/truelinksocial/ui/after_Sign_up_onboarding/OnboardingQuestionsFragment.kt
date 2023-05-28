@@ -18,6 +18,7 @@ class OnboardingQuestionsFragment :Fragment() {
         binding.backButton.setOnClickListener {
             findNavController().navigateUp()
         }
+
         return binding.root
     }
      override fun onDestroyView() {

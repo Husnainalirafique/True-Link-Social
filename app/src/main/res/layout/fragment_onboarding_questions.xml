@@ -3,9 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+    </data>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        tools:ignore="HardcodedText"
         tools:context=".ui.after_Sign_up_onboarding.OnboardingQuestionsFragment">
 
         <ScrollView
@@ -53,7 +56,8 @@
                         android:text="Personalize your experience"
                         android:textColor="@color/black"
                         android:layout_gravity="center"
-                        android:gravity="center"/>
+                        android:gravity="center"
+                        />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -207,7 +211,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="52dp"
                             android:button="@android:color/transparent"
-                            android:text="Single"
+                            android:text="Sedentary"
                             android:paddingStart="16dp"
                             android:textColor="@drawable/radio_text_color"
                             android:fontFamily="@font/montserrat_medium"
@@ -217,18 +221,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="52dp"
                             android:button="@android:color/transparent"
-                            android:text="Divorced"
-                            android:paddingStart="16dp"
-                            android:layout_marginTop="12dp"
-                            android:textColor="@drawable/radio_text_color"
-                            android:fontFamily="@font/montserrat_medium"
-                            android:background="@drawable/radio_btn_bg"
-                            />
-                        <RadioButton
-                            android:layout_width="match_parent"
-                            android:layout_height="52dp"
-                            android:button="@android:color/transparent"
-                            android:text="In a open relationship"
+                            android:text="Moderately active"
                             android:paddingStart="16dp"
                             android:layout_marginTop="12dp"
                             android:textColor="@drawable/radio_text_color"
@@ -239,7 +232,18 @@
                             android:layout_width="match_parent"
                             android:layout_height="52dp"
                             android:button="@android:color/transparent"
-                            android:text="It’s a complicated"
+                            android:text="Very active"
+                            android:paddingStart="16dp"
+                            android:layout_marginTop="12dp"
+                            android:textColor="@drawable/radio_text_color"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:background="@drawable/radio_btn_bg"
+                            />
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="52dp"
+                            android:button="@android:color/transparent"
+                            android:text="I prefer not to say"
                             android:paddingStart="16dp"
                             android:layout_marginTop="12dp"
                             android:textColor="@drawable/radio_text_color"
@@ -374,6 +378,202 @@
                             android:background="@drawable/radio_btn_bg"
                             />
                     </RadioGroup>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="Diet habit"
+                        android:layout_marginTop="52dp"
+                        android:textColor="@color/black"
+                        />
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="52dp"
+                            android:button="@android:color/transparent"
+                            android:text="Omnivore"
+                            android:paddingStart="16dp"
+                            android:textColor="@drawable/radio_text_color"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:background="@drawable/radio_btn_bg"
+                            />
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="52dp"
+                            android:button="@android:color/transparent"
+                            android:text="Vegan"
+                            android:paddingStart="16dp"
+                            android:layout_marginTop="12dp"
+                            android:textColor="@drawable/radio_text_color"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:background="@drawable/radio_btn_bg"
+                            />
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="52dp"
+                            android:button="@android:color/transparent"
+                            android:text="Pescatarian"
+                            android:paddingStart="16dp"
+                            android:layout_marginTop="12dp"
+                            android:textColor="@drawable/radio_text_color"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:background="@drawable/radio_btn_bg"
+                            />
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="52dp"
+                            android:button="@android:color/transparent"
+                            android:text="Gluten-free"
+                            android:paddingStart="16dp"
+                            android:layout_marginTop="12dp"
+                            android:textColor="@drawable/radio_text_color"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:background="@drawable/radio_btn_bg"
+                            />
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="52dp"
+                            android:button="@android:color/transparent"
+                            android:text="Other"
+                            android:paddingStart="16dp"
+                            android:layout_marginTop="12dp"
+                            android:textColor="@drawable/radio_text_color"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:background="@drawable/radio_btn_bg"
+                            />
+                    </RadioGroup>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="When would like to be married"
+                        android:layout_marginTop="52dp"
+                        android:textColor="@color/black"
+                        />
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="52dp"
+                            android:button="@android:color/transparent"
+                            android:text="Next year"
+                            android:paddingStart="16dp"
+                            android:layout_marginTop="12dp"
+                            android:textColor="@drawable/radio_text_color"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:background="@drawable/radio_btn_bg"
+                            />
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="52dp"
+                            android:button="@android:color/transparent"
+                            android:text="Less than a year"
+                            android:paddingStart="16dp"
+                            android:layout_marginTop="12dp"
+                            android:textColor="@drawable/radio_text_color"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:background="@drawable/radio_btn_bg"
+                            />
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="52dp"
+                            android:button="@android:color/transparent"
+                            android:text="Not interested"
+                            android:paddingStart="16dp"
+                            android:layout_marginTop="12dp"
+                            android:textColor="@drawable/radio_text_color"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:background="@drawable/radio_btn_bg"
+                            />
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="52dp"
+                            android:button="@android:color/transparent"
+                            android:text="Never"
+                            android:paddingStart="16dp"
+                            android:layout_marginTop="12dp"
+                            android:textColor="@drawable/radio_text_color"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:background="@drawable/radio_btn_bg"
+                            />
+                    </RadioGroup>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="Degree"
+                        android:layout_marginTop="52dp"
+                        android:textColor="@color/black"
+                        />
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="52dp"
+                            android:button="@android:color/transparent"
+                            android:text="Bachelors"
+                            android:paddingStart="16dp"
+                            android:layout_marginTop="12dp"
+                            android:textColor="@drawable/radio_text_color"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:background="@drawable/radio_btn_bg"
+                            />
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="52dp"
+                            android:button="@android:color/transparent"
+                            android:text="Masters"
+                            android:paddingStart="16dp"
+                            android:layout_marginTop="12dp"
+                            android:textColor="@drawable/radio_text_color"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:background="@drawable/radio_btn_bg"
+                            />
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="52dp"
+                            android:button="@android:color/transparent"
+                            android:text="High school"
+                            android:paddingStart="16dp"
+                            android:layout_marginTop="12dp"
+                            android:textColor="@drawable/radio_text_color"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:background="@drawable/radio_btn_bg"
+                            />
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="52dp"
+                            android:button="@android:color/transparent"
+                            android:text="PhD"
+                            android:paddingStart="16dp"
+                            android:layout_marginTop="12dp"
+                            android:textColor="@drawable/radio_text_color"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:background="@drawable/radio_btn_bg"
+                            />
+                    </RadioGroup>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btGetStarted"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:layout_marginTop="70dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:layout_marginBottom="30dp"
+                        style="@style/MyButtonStyle"
+                        android:text="@string/get_started" />
                 </LinearLayout>
 
             </LinearLayout>

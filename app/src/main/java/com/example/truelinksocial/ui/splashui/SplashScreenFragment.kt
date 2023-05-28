@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.os.postDelayed
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.fragment.findNavController
 import com.example.truelinksocial.R
@@ -24,12 +25,13 @@ class SplashScreenFragment : Fragment() {
         Handler().postDelayed({
             if (context  != null) {
                 if (onBoardingFinished()) {
-                    findNavController().navigate(R.id.action_splashScreenFragment_to_onBoardingPagerFragment)
+                    findNavController().navigate(R.id.action_splashScreenFragment_to_registeration)
                 } else {
-                    findNavController().navigate(R.id.action_splashScreenFragment_to_onBoardingPagerFragment)
+                    findNavController().navigate(R.id.action_splashScreenFragment_to_registeration)
                 }
             }
         }, 500)
+
         return binding.root
     }
 

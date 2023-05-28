@@ -35,7 +35,6 @@ class Onboarding3Fragment : Fragment() {
         editor.putBoolean("finished", true)
         editor.apply()
     }
-
     override fun onDestroyView() {
         super.onDestroyView()
         binding.unbind()
