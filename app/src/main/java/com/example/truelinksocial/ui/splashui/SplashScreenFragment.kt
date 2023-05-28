@@ -8,13 +8,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.os.postDelayed
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.fragment.findNavController
 import com.example.truelinksocial.R
 import com.example.truelinksocial.databinding.FragmentSplashScreenBinding
-
-
 @Suppress("DEPRECATION")
 @SuppressLint("CustomSplashScreen")
 class SplashScreenFragment : Fragment() {
@@ -34,7 +31,6 @@ class SplashScreenFragment : Fragment() {
 
         return binding.root
     }
-
     private fun onBoardingFinished(): Boolean {
         val sharedPref = requireActivity().getSharedPreferences("onBoarding", Context.MODE_PRIVATE)
         return sharedPref.getBoolean("finished", false)
