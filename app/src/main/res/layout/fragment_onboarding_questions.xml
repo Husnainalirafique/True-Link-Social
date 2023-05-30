@@ -30,9 +30,9 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingHorizontal="20dp"
                     android:layout_marginTop="35dp"
                     android:orientation="horizontal"
+                    android:layout_marginHorizontal="20dp"
                     >
                     <com.google.android.material.card.MaterialCardView
                         android:id="@+id/backButton"
@@ -58,12 +58,112 @@
                         android:layout_gravity="center"
                         android:gravity="center"
                         />
+
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingHorizontal="20dp"
+                    android:layout_marginTop="52dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="Number of friends"
+                        android:textColor="@color/black"
+                        android:layout_marginHorizontal="20dp"
+                        />
+                    <androidx.appcompat.widget.AppCompatSeekBar
+                        android:id="@+id/seekBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="22dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:max="6"
+                        android:progressBackgroundTint="@color/primary_color"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginHorizontal="20dp"
+                    android:gravity="end"
+                    >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:text="1"
+                        android:layout_marginEnd="48dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:text="2"
+                        android:layout_marginEnd="49dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:text="3"
+                        android:layout_marginEnd="47dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:text="4"
+                        android:layout_marginEnd="45dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="42dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="5"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:text="5+"
+                        />
+                </LinearLayout>
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical"
+                    android:layout_marginHorizontal="20dp"
                     android:layout_marginTop="45dp"
                     >
                     <TextView
@@ -134,7 +234,7 @@
                         android:textColorHint="#9A9797"
                         android:fontFamily="@font/montserrat_medium"
                         tools:ignore="RtlSymmetry,VisualLintTextFieldSize,TextContrastCheck"
-                        android:autofillHints="username" />
+                        />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -563,13 +663,14 @@
                             android:textColor="@drawable/radio_text_color"
                             android:fontFamily="@font/montserrat_medium"
                             android:background="@drawable/radio_btn_bg"
+                            tools:ignore="RtlSymmetry"
                             />
                     </RadioGroup>
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/btGetStarted"
                         android:layout_width="match_parent"
                         android:layout_height="52dp"
-                        android:layout_marginTop="70dp"
+                        android:layout_marginTop="40dp"
                         android:fontFamily="@font/montserrat_bold"
                         android:layout_marginBottom="30dp"
                         style="@style/MyButtonStyle"
