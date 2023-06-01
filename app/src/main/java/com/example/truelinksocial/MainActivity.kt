@@ -11,8 +11,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         //handling status bar
-    }
-    init {
         statusBarContentVisibility()
     }
     private fun statusBarContentVisibility() {

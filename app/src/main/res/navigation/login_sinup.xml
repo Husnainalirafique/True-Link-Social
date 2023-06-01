@@ -15,8 +15,8 @@
             app:popUpTo="@id/signUpFragment"
             app:popUpToInclusive="true" />
         <action
-            android:id="@+id/action_signInFragment_to_onboardingQuestionsFragment"
-            app:destination="@id/onboardingQuestionsFragment" />
+            android:id="@+id/action_signInFragment_to_onboardingChooseAvatarFragment"
+            app:destination="@id/onboardingChooseAvatarFragment" />
     </fragment>
     <fragment
         android:id="@+id/signUpFragment"
@@ -63,5 +63,14 @@
         android:id="@+id/onboardingQuestionsFragment"
         android:name="com.example.truelinksocial.ui.after_Sign_up_onboarding.OnboardingQuestionsFragment"
         tools:layout="@layout/fragment_onboarding_questions"
-        android:label="OnboardingQuestionsFragment" />
+        android:label="OnboardingQuestionsFragment" >
+        <action
+            android:id="@+id/action_onboardingQuestionsFragment_to_onboardingChooseAvatarFragment"
+            app:destination="@id/onboardingChooseAvatarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboardingChooseAvatarFragment"
+        android:name="com.example.truelinksocial.ui.after_Sign_up_onboarding.OnboardingChooseAvatarFragment"
+        tools:layout="@layout/fragment_onboarding_choose_avatar"
+        android:label="OnboardingChooseAvatarFragment" />
 </navigation>

@@ -26,13 +26,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:layout_marginHorizontal="20dp"
                 >
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="35dp"
                     android:orientation="horizontal"
-                    android:layout_marginHorizontal="20dp"
                     >
                     <com.google.android.material.card.MaterialCardView
                         android:id="@+id/backButton"
@@ -60,110 +60,12 @@
                         />
 
                 </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="52dp"
-                    android:orientation="vertical">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="16sp"
-                        android:fontFamily="@font/montserrat_semibold"
-                        android:text="Number of friends"
-                        android:textColor="@color/black"
-                        android:layout_marginHorizontal="20dp"
-                        />
-                    <androidx.appcompat.widget.AppCompatSeekBar
-                        android:id="@+id/seekBar"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="22dp"
-                        android:layout_marginHorizontal="10dp"
-                        android:max="6"
-                        android:progressBackgroundTint="@color/primary_color"
-                        />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginHorizontal="20dp"
-                    android:gravity="end"
-                    >
-
-                    <TextView
-                        android:id="@+id/textView1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/montserrat_bold"
-                        android:textColor="@color/black"
-                        android:textSize="15sp"
-                        android:text="1"
-                        android:layout_marginEnd="48dp"
-                        />
-
-                    <TextView
-                        android:id="@+id/textView2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/montserrat_bold"
-                        android:textColor="@color/black"
-                        android:textSize="15sp"
-                        android:text="2"
-                        android:layout_marginEnd="49dp"
-                        />
-
-                    <TextView
-                        android:id="@+id/textView3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/montserrat_bold"
-                        android:textColor="@color/black"
-                        android:textSize="15sp"
-                        android:text="3"
-                        android:layout_marginEnd="47dp"
-                        />
-
-                    <TextView
-                        android:id="@+id/textView4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/montserrat_bold"
-                        android:textColor="@color/black"
-                        android:textSize="15sp"
-                        android:text="4"
-                        android:layout_marginEnd="45dp"
-                        />
-
-                    <TextView
-                        android:id="@+id/textView5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="42dp"
-                        android:fontFamily="@font/montserrat_bold"
-                        android:text="5"
-                        android:textColor="@color/black"
-                        android:textSize="15sp" />
-
-                    <TextView
-                        android:id="@+id/textView6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/montserrat_bold"
-                        android:textColor="@color/black"
-                        android:textSize="15sp"
-                        android:text="5+"
-                        />
-                </LinearLayout>
                 <LinearLayout
 
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:layout_marginHorizontal="20dp"
                     android:layout_marginTop="45dp"
                     >
                     <TextView
@@ -293,6 +195,103 @@
                             android:background="@drawable/radio_btn_bg"
                             />
                     </RadioGroup>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="52dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:text="Number of friends"
+                            android:textColor="@color/black"
+                            />
+                        <androidx.appcompat.widget.AppCompatSeekBar
+                            android:id="@+id/seekBar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="22dp"
+                            android:max="6"
+                            android:thumb="@drawable/thumb_bg"
+                            android:progressBackgroundTint="@color/primary_color"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="end"
+                        >
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:text="1"
+                            android:layout_marginEnd="46dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:text="2"
+                            android:layout_marginEnd="44dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:text="3"
+                            android:layout_marginEnd="44dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:text="4"
+                            android:layout_marginEnd="45dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="40dp"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:text="5"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:text="5+"
+                            android:layout_marginEnd="7dp"
+                            />
+                    </LinearLayout>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -478,6 +477,103 @@
                             android:background="@drawable/radio_btn_bg"
                             />
                     </RadioGroup>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="52dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:text="Time being single (years)"
+                            android:textColor="@color/black"
+                            />
+                        <androidx.appcompat.widget.AppCompatSeekBar
+                            android:id="@+id/seekBarTimeBeingSingle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="22dp"
+                            android:max="6"
+                            android:thumb="@drawable/thumb_bg"
+                            android:progressBackgroundTint="@color/primary_color"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="end"
+                        >
+
+                        <TextView
+                            android:id="@+id/textView1.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:text="1"
+                            android:layout_marginEnd="46dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/textView2.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:text="2"
+                            android:layout_marginEnd="44dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/textView3.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:text="3"
+                            android:layout_marginEnd="44dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/textView4.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:text="4"
+                            android:layout_marginEnd="45dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/textView5.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="40dp"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:text="5"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/textView6.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:text="5+"
+                            android:layout_marginEnd="7dp"
+                            />
+                    </LinearLayout>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

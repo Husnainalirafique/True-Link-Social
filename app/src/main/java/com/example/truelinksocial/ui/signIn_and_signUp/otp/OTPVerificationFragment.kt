@@ -22,6 +22,7 @@ class OTPVerificationFragment :Fragment() {
         buttonConfirm()
         return binding.root
     }
+
     private fun otpEditTextFunctionality(){
         val pinEditText1 = binding.edittextPin1
         val pinEditText2 = binding.edittextPin2

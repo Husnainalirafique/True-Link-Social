@@ -1,0 +1,59 @@
+package com.example.truelinksocial.ui.after_Sign_up_onboarding
+
+import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil
+import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.truelinksocial.R
+import com.example.truelinksocial.databinding.FragmentOnboardingChooseAvatarBinding
+import com.example.truelinksocial.ui.after_Sign_up_onboarding.adapter.AvatarRecyclerViewAdapter
+import com.example.truelinksocial.ui.after_Sign_up_onboarding.adapter.AvatarRecyclerViewData
+
+class OnboardingChooseAvatarFragment :Fragment(),AvatarRecyclerViewAdapter.OnImageItemClickListener {
+    private lateinit var binding: FragmentOnboardingChooseAvatarBinding
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
+
+        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_onboarding_choose_avatar, container, false)
+
+        handlingAvatarRecyclerView()
+        handleBackButton()
+        return binding.root
+
+    }
+
+    //Handling the back button
+    private fun handleBackButton(){
+        binding.backButton.setOnClickListener {
+            findNavController().navigateUp()
+        }
+    }
+
+    //setting recycler view
+    private fun handlingAvatarRecyclerView(){
+        val recyclerView = binding.avatarRecyclerView
+        val lm = LinearLayoutManager(requireContext(),LinearLayoutManager.HORIZONTAL,false)
+        recyclerView.layoutManager = lm
+        //Data
+        val imgList = arrayListOf(
+            AvatarRecyclerViewData(R.drawable.avatar1),
+            AvatarRecyclerViewData(R.drawable.avatar2),
+            AvatarRecyclerViewData(R.drawable.avatar3),
+            AvatarRecyclerViewData(R.drawable.avatar4),
+        )
+        //setting Adapter
+        recyclerView.adapter = AvatarRecyclerViewAdapter(imgList,this)
+    }
+     override fun onDestroyView() {
+        super.onDestroyView()
+        binding.unbind()
+    }
+
+    override fun onItemClick(imageRes: AvatarRecyclerViewData) {
+        binding.setimg.setImageResource(imageRes.img)
+        binding.setimg.visibility = View.VISIBLE
+    }
+}

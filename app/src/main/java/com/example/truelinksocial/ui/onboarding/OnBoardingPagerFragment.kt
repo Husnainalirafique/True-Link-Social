@@ -50,7 +50,7 @@ class OnBoardingPagerFragment : Fragment() {
         })
     }
 
-    private fun changeColor() {
+    internal fun changeColor() {
         when (binding.viewpager.currentItem) {
             0 -> {
                 binding.onBoardingPagerFragmentDotImg1.setBackgroundColor(ContextCompat.getColor(requireContext(),R.color.primary_color))

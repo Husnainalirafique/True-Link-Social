@@ -28,7 +28,6 @@ class SplashScreenFragment : Fragment() {
                 }
             }
         }, 500)
-
         return binding.root
     }
     private fun onBoardingFinished(): Boolean {
