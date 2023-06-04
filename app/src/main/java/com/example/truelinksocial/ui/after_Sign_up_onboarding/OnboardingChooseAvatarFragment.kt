@@ -39,11 +39,12 @@ class OnboardingChooseAvatarFragment :Fragment(),AvatarRecyclerViewAdapter.OnIma
         recyclerView.layoutManager = lm
         //Data
         val imgList = arrayListOf(
-            AvatarRecyclerViewData(R.drawable.avatar1),
             AvatarRecyclerViewData(R.drawable.avatar2),
             AvatarRecyclerViewData(R.drawable.avatar3),
             AvatarRecyclerViewData(R.drawable.avatar4),
-        )
+            AvatarRecyclerViewData(R.drawable.avatar5),
+            AvatarRecyclerViewData(R.drawable.avatar6),
+            )
         //setting Adapter
         recyclerView.adapter = AvatarRecyclerViewAdapter(imgList,this)
     }

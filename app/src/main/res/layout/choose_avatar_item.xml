@@ -6,7 +6,6 @@
         android:id="@+id/avatarImgView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/choose_avatar_img_bg"
         android:src="@drawable/avatar2"
         android:layout_marginEnd="16dp"
         />
