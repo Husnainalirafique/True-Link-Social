@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -13,11 +14,15 @@ import com.example.truelinksocial.databinding.FragmentOnboardingChooseAvatarBind
 import com.example.truelinksocial.ui.after_Sign_up_onboarding.adapter.AvatarRecyclerViewAdapter
 import com.example.truelinksocial.ui.after_Sign_up_onboarding.adapter.AvatarRecyclerViewData
 
-class OnboardingChooseAvatarFragment :Fragment(),AvatarRecyclerViewAdapter.OnImageItemClickListener {
+class OnboardingChooseAvatarFragment :Fragment(),AvatarRecyclerViewAdapter.OnImageClick{
     private lateinit var binding: FragmentOnboardingChooseAvatarBinding
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
 
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_onboarding_choose_avatar, container, false)
+
+        binding.btnFindYourMatch.setOnClickListener {
+            Toast.makeText(requireContext(), "Matched", Toast.LENGTH_SHORT).show()
+        }
 
         handlingAvatarRecyclerView()
         handleBackButton()
@@ -53,8 +58,12 @@ class OnboardingChooseAvatarFragment :Fragment(),AvatarRecyclerViewAdapter.OnIma
         binding.unbind()
     }
 
-    override fun onItemClick(imageRes: AvatarRecyclerViewData) {
-        binding.setimg.setImageResource(imageRes.img)
+    override fun onClick(imgres: AvatarRecyclerViewData) {
+        binding.setimg.setImageResource(imgres.img)
         binding.setimg.visibility = View.VISIBLE
+        binding.btnFindYourMatch.isEnabled = true
+        binding.btnFindYourMatch.alpha = 1.0f
     }
+
+
 }
