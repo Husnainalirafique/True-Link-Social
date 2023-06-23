@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_navigation"
+    app:startDestination="@id/swipeFragment">
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.truelinksocial.ui.home.ProfileFragment"
+        tools:layout="@layout/fragment_profile"
+        android:label="ProfileFragment" />
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.example.truelinksocial.ui.home.ChatFragment"
+        tools:layout="@layout/fragment_chat"
+        android:label="ChatFragment" />
+    <fragment
+        android:id="@+id/swipeFragment"
+        android:name="com.example.truelinksocial.ui.home.SwipeFragment"
+        tools:layout="@layout/fragment_swipe"
+        android:label="SwipeFragment" />
+    <fragment
+        android:id="@+id/requestFragment"
+        android:name="com.example.truelinksocial.ui.home.RequestFragment"
+        tools:layout="@layout/fragment_request"
+        android:label="RequestFragment" />
+</navigation>

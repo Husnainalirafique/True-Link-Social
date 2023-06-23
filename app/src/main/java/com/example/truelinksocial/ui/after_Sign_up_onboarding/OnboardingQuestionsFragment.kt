@@ -27,7 +27,8 @@ class OnboardingQuestionsFragment :Fragment() {
     }
 
     private fun workingWithSeekBars() {
-        binding.seekBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener{
+        binding.numberOfFriends.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener{
+
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
 
             }
@@ -41,6 +42,21 @@ class OnboardingQuestionsFragment :Fragment() {
             }
 
         })
+        binding.seekBarTimeBeingSingle.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener{
+            override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
+
+            }
+
+            override fun onStartTrackingTouch(seekBar: SeekBar?) {
+
+            }
+
+            override fun onStopTrackingTouch(seekBar: SeekBar?) {
+
+            }
+
+        })
+
     }
     override fun onDestroyView() {
         super.onDestroyView()

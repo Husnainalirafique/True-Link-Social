@@ -32,9 +32,6 @@ class SignInFragment :Fragment() {
         binding.registerNow.setOnClickListener {
             findNavController().navigate(R.id.action_signInFragment_to_signUpFragment)
         }
-        binding.btnSignIn.setOnClickListener {
-            findNavController().navigate(R.id.action_signInFragment_to_onboardingChooseAvatarFragment)
-        }
     }
     private fun passwordVisibility(editText:EditText) {
         editText.setOnTouchListener(object : View.OnTouchListener {

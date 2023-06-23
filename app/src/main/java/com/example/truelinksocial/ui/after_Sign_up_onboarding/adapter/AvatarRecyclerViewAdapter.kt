@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.truelinksocial.R
-
+import com.example.truelinksocial.ui.after_Sign_up_onboarding.data.AvatarRecyclerViewData
 
 
 class AvatarRecyclerViewAdapter(
@@ -28,7 +28,7 @@ class AvatarRecyclerViewAdapter(
 
     override fun onBindViewHolder(holder: ViewModel, position: Int) {
         val itemPosition = imgList[position]
-        holder.img.setImageResource(itemPosition.img)
+        holder.img.setImageResource(itemPosition.image)
         holder.itemView.setOnClickListener {
             onImgClickListner.onClick(itemPosition)
             selectedItemPosition = holder.adapterPosition
@@ -44,8 +44,8 @@ class AvatarRecyclerViewAdapter(
         }
     }
 
-    class ViewModel(view: View) : RecyclerView.ViewHolder(view) {
-        val img: ImageView = view.findViewById(R.id.avatarImgView)
+    class ViewModel(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        val img: ImageView = itemView.findViewById(R.id.avatarImgView)
     }
 }
 

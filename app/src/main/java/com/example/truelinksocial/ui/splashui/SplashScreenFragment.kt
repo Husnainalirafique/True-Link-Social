@@ -2,6 +2,7 @@ package com.example.truelinksocial.ui.splashui
 
 import android.annotation.SuppressLint
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import androidx.fragment.app.Fragment
@@ -10,6 +11,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.fragment.findNavController
+import com.example.truelinksocial.ui.home.HomeActivity
 import com.example.truelinksocial.R
 import com.example.truelinksocial.databinding.FragmentSplashScreenBinding
 @Suppress("DEPRECATION")
@@ -22,9 +24,10 @@ class SplashScreenFragment : Fragment() {
         Handler().postDelayed({
             if (context  != null) {
                 if (onBoardingFinished()) {
-                    findNavController().navigate(R.id.action_splashScreenFragment_to_registeration)
+                   val intent = Intent(requireContext(), HomeActivity::class.java)
+                    startActivity(intent)
                 } else {
-                    findNavController().navigate(R.id.action_splashScreenFragment_to_registeration)
+                    findNavController().navigate(R.id.action_splashScreenFragment_to_onBoardingPagerFragment)
                 }
             }
         }, 500)
