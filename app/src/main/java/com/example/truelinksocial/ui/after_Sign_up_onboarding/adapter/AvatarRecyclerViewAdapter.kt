@@ -8,10 +8,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.truelinksocial.R
 import com.example.truelinksocial.ui.after_Sign_up_onboarding.data.AvatarRecyclerViewData
 
-
 class AvatarRecyclerViewAdapter(
     private val imgList: ArrayList<AvatarRecyclerViewData>,
-    private val onImgClickListner : OnImageClick ) :
+    private val onImgClickListener : OnImageClick ) :
     RecyclerView.Adapter<AvatarRecyclerViewAdapter.ViewModel>() {
     private var selectedItemPosition : Int = -1
     interface OnImageClick {
@@ -30,7 +29,7 @@ class AvatarRecyclerViewAdapter(
         val itemPosition = imgList[position]
         holder.img.setImageResource(itemPosition.image)
         holder.itemView.setOnClickListener {
-            onImgClickListner.onClick(itemPosition)
+            onImgClickListener.onClick(itemPosition)
             selectedItemPosition = holder.adapterPosition
             notifyDataSetChanged()
         }

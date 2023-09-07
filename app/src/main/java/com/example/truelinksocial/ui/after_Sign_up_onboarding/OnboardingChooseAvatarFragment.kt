@@ -40,8 +40,7 @@ class OnboardingChooseAvatarFragment :Fragment(),AvatarRecyclerViewAdapter.OnIma
     //setting recycler view
     private fun handlingAvatarRecyclerView(){
         val recyclerView = binding.avatarRecyclerView
-        val lm = LinearLayoutManager(requireContext(),LinearLayoutManager.HORIZONTAL,false)
-        recyclerView.layoutManager = lm
+        recyclerView.layoutManager = LinearLayoutManager(requireContext(),LinearLayoutManager.HORIZONTAL,false)
         //Data
         val imgList = arrayListOf(
             AvatarRecyclerViewData(R.drawable.avatar2),
