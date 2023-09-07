@@ -1,4 +1,4 @@
-package com.example.truelinksocial.ui.home
+package com.example.truelinksocial.ui.home.swipe
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

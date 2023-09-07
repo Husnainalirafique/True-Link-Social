@@ -25,8 +25,6 @@ class HomeActivity : AppCompatActivity() {
              window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
          }
     private fun handlingBottomNavBar(){
-//        val navController= Navigation.findNavController(this,R.id.homeFragmentContainerView)
-//        setupWithNavController(binding.bottomNavigationView,navController)
         binding.bottomNavigationView.setupWithNavController(findNavController(R.id.homeFragmentContainerView))
     }
 }

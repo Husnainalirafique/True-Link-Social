@@ -10,37 +10,52 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import com.example.truelinksocial.ui.home.HomeActivity
 import com.example.truelinksocial.R
 import com.example.truelinksocial.databinding.FragmentSplashScreenBinding
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
+
 @Suppress("DEPRECATION")
 @SuppressLint("CustomSplashScreen")
 class SplashScreenFragment : Fragment() {
     private lateinit var binding: FragmentSplashScreenBinding
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle? ): View {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_splash_screen, container, false)
 
-        Handler().postDelayed({
-            if (context  != null) {
+        //Functions
+        handlingSplashScreen()
+
+        return binding.root
+    }
+    private fun handlingSplashScreen() {
+        lifecycleScope.launch {
+            delay(500)
+            if (context != null) {
                 if (onBoardingFinished()) {
-                   val intent = Intent(requireContext(), HomeActivity::class.java)
-                    startActivity(intent)
+                    findNavController().navigate(R.id.action_splashScreenFragment_to_registeration)
                 } else {
                     findNavController().navigate(R.id.action_splashScreenFragment_to_onBoardingPagerFragment)
                 }
             }
-        }, 500)
-        return binding.root
-    }
-    private fun onBoardingFinished(): Boolean {
-        val sharedPref = requireActivity().getSharedPreferences("onBoarding", Context.MODE_PRIVATE)
-        return sharedPref.getBoolean("finished", false)
+        }
+
     }
 
+    private fun onBoardingFinished(): Boolean {
+        return requireActivity().getSharedPreferences("onBoarding", Context.MODE_PRIVATE)
+            .getBoolean("finished", false)
+    }
 
     override fun onDestroyView() {
         super.onDestroyView()
         binding.unbind()
     }
 }
+

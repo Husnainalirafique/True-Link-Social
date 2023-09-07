@@ -32,7 +32,7 @@ class Onboarding3Fragment : Fragment() {
     private fun onBoardingFinished() {
         val sharedPref = requireActivity().getSharedPreferences("onBoarding", Context.MODE_PRIVATE)
         val editor = sharedPref.edit()
-        editor.putBoolean("finished", true)
+        editor.putBoolean("finished", false)
         editor.apply()
     }
     override fun onDestroyView() {

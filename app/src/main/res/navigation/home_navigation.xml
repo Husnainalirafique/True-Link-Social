@@ -17,7 +17,7 @@
         android:label="ChatFragment" />
     <fragment
         android:id="@+id/swipeFragment"
-        android:name="com.example.truelinksocial.ui.home.SwipeFragment"
+        android:name="com.example.truelinksocial.ui.home.swipe.SwipeFragment"
         tools:layout="@layout/fragment_swipe"
         android:label="SwipeFragment" />
     <fragment

@@ -89,7 +89,7 @@
                 android:backgroundTint="#EBEBEB"
                 android:fontFamily="@font/poppins_medium"
                 android:gravity="center"
-                android:inputType="number"
+                android:inputType="phone"
                 android:maxLength="11"
                 android:textColor="@color/black"
                 tools:ignore="SpeakableTextPresentCheck" />
